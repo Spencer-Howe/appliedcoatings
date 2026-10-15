@@ -3,17 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Applied Coatings — Bathtub Refinishing Serving All of Montana</title>
+  <title>Bathtub Refinishing Kalispell & Montana | Applied Coatings</title>
   <meta name="description" content="Bathtub, tile, sink and shower refinishing based in Kalispell and serving all of Montana. Save thousands over replacement. Free estimates — call (406) 407-3814.">
   <link rel="canonical" href="https://appliedcoatings406.com/">
   <meta name="theme-color" content="#2e4a5a">
-  <link rel="icon" href="static/img/Joshbarnesappliedlogo.png">
+  <link rel="icon" type="image/png" href="static/img/favicon-48.png">
+  <link rel="apple-touch-icon" href="static/img/apple-touch-icon.png">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Applied Coatings">
-  <meta property="og:title" content="Applied Coatings — Bathtub Refinishing Serving All of Montana">
+  <meta property="og:title" content="Bathtub Refinishing Kalispell & Montana | Applied Coatings">
   <meta property="og:description" content="Bathtub, tile, sink and shower refinishing based in Kalispell and serving all of Montana. Save thousands over replacement. Free estimates — call (406) 407-3814.">
   <meta property="og:url" content="https://appliedcoatings406.com/">
-  <meta property="og:image" content="https://appliedcoatings406.com/static/img/beforeafter1.jpg">
+  <meta property="og:image" content="https://appliedcoatings406.com/static/img/large/20260806_140721-COLLAGE.jpg">
   <meta name="twitter:card" content="summary_large_image">
   <script type="application/ld+json">
   {
@@ -43,6 +44,11 @@
         "@type": "State",
         "name": "Montana"
       },
+      {"@type": "City", "name": "Billings"},
+      {"@type": "City", "name": "Missoula"},
+      {"@type": "City", "name": "Great Falls"},
+      {"@type": "City", "name": "Bozeman"},
+      {"@type": "City", "name": "Whitefish"},
       {
         "@type": "City",
         "name": "Kalispell"
@@ -69,6 +75,8 @@
   }
   </script>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <style>
@@ -95,7 +103,7 @@
     .section-label { color:var(--gold); font-size:.8rem; font-weight:700; letter-spacing:2px; text-transform:uppercase; }
     .section-title { font-family:'Oswald',sans-serif; font-size:2rem; color:var(--navy); font-weight:700; }
     /* HERO */
-    .hero { background:linear-gradient(135deg,rgba(46,74,90,.92) 0%,rgba(46,74,90,.75) 100%), url('static/img/sprayingaction.jpg') center/cover no-repeat; min-height:540px; display:flex; align-items:center; }
+    .hero { background:linear-gradient(135deg,rgba(46,74,90,.92) 0%,rgba(46,74,90,.75) 100%), url('static/img/large/20250204_143313.jpg') center/cover no-repeat; min-height:540px; display:flex; align-items:center; }
     .hero h1 { font-size:clamp(2rem,5vw,3.4rem); color:#fff; line-height:1.1; }
     .hero p { color:rgba(255,255,255,.85); font-size:1.1rem; max-width:540px; }
     .hero-badge { background:var(--gold); color:#fff; font-family:'Oswald',sans-serif; font-size:.75rem; letter-spacing:2px; text-transform:uppercase; padding:4px 14px; border-radius:2px; display:inline-block; margin-bottom:16px; }
@@ -103,14 +111,19 @@
     .trust-item { font-family:'Oswald',sans-serif; font-size:1rem; letter-spacing:.3px; }
     .trust-item i { color:var(--gold2); font-size:1.3rem; }
     .why-card { border:none; border-top:3px solid var(--gold); border-radius:4px; height:100%; }
+    .bi-check-circle-fill { color:var(--gold); }
     .why-card .icon { font-size:2rem; color:var(--gold); }
     .ba-wrap { position:relative; border-radius:6px; overflow:hidden; }
-    .ba-wrap img { width:100%; height:auto; display:block; }
+    .ba-wrap img { width:100%; height:auto; aspect-ratio:1/1; object-fit:cover; display:block; }
     .ba-label { position:absolute; top:10px; left:10px; background:var(--navy); color:#fff; font-family:'Oswald',sans-serif; font-size:.75rem; letter-spacing:1px; text-transform:uppercase; padding:3px 10px; border-radius:2px; }
     .review-card { background:var(--light); border:none; border-radius:6px; }
     .stars { color:var(--gold2); font-size:1rem; }
     .cta-band { background:var(--gold); color:#fff; padding:50px 0; }
     .cta-band h2 { font-size:2.2rem; }
+
+    .mobile-cta { position:fixed; left:0; right:0; bottom:0; z-index:1030; display:flex; gap:8px; padding:8px; background:rgba(17,17,17,.95); }
+    .mobile-cta .btn { flex:1; font-family:'Oswald',sans-serif; padding:10px 0; }
+    @media(max-width:991.98px) { body { padding-bottom:62px; } .navbar-brand img { max-height:70px !important; } }
   </style>
 </head>
 <body>
@@ -129,7 +142,7 @@
 <nav class="navbar navbar-expand-lg sticky-top">
   <div class="container">
     <a class="navbar-brand p-0" href="index.html">
-      <img src="static/img/Joshbarnesappliedlogo.png" alt="Applied Coatings — Bathtub Refinishing Kalispell, MT" style="max-height:110px;width:auto;object-fit:contain;">
+      <img src="static/img/logo-web.png" width="136" height="110" alt="Applied Coatings — Bathtub Refinishing Kalispell, MT" style="max-height:110px;width:auto;object-fit:contain;">
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -217,13 +230,13 @@
       <h2 class="section-title">Before &amp; After</h2>
     </div>
     <div class="row g-3">
-      <div class="col-6 col-md-3"><div class="ba-wrap"><img src="static/img/beforeafter1.jpg" alt="Bathtub before and after refinishing in Kalispell, MT" loading="lazy"><span class="ba-label" style="background:var(--gold);">Before &amp; After</span></div></div>
-      <div class="col-6 col-md-3"><div class="ba-wrap"><img src="static/img/beforeafter2.jpg" alt="Tub and shower before and after reglazing" loading="lazy"><span class="ba-label" style="background:var(--gold);">Before &amp; After</span></div></div>
-      <div class="col-6 col-md-3"><div class="ba-wrap"><img src="static/img/beforeafterlogo3.jpg" alt="Before and after bathtub resurfacing in Montana" loading="lazy"><span class="ba-label" style="background:var(--gold);">Before &amp; After</span></div></div>
-      <div class="col-6 col-md-3"><div class="ba-wrap"><img src="static/img/finishtub1.jpg" alt="Refinished white bathtub" loading="lazy"><span class="ba-label" style="background:var(--navy);">Finished</span></div></div>
+      <div class="col-6 col-md-3"><div class="ba-wrap"><img src="static/img/thumb/20260913_192059-COLLAGE.jpg" alt="Bathtub before and after refinishing by Applied Coatings" loading="lazy" width="700" height="700"><span class="ba-label" style="background:var(--gold);">Before &amp; After</span></div></div>
+      <div class="col-6 col-md-3"><div class="ba-wrap"><img src="static/img/thumb/20260721_184152-COLLAGE.jpg" alt="Countertop and sink before and after refinishing" loading="lazy" width="700" height="700"><span class="ba-label" style="background:var(--gold);">Before &amp; After</span></div></div>
+      <div class="col-6 col-md-3"><div class="ba-wrap"><img src="static/img/thumb/20251126_132350-COLLAGE.jpg" alt="Tub and shower before and after reglazing in Montana" loading="lazy" width="700" height="700"><span class="ba-label" style="background:var(--gold);">Before &amp; After</span></div></div>
+      <div class="col-6 col-md-3"><div class="ba-wrap"><img src="static/img/thumb/20250204_143313.jpg" alt="Glossy white clawfoot tub after refinishing" loading="lazy" width="700" height="700"><span class="ba-label" style="background:var(--navy);">Finished</span></div></div>
     </div>
     <div class="text-center mt-4">
-      <a href="services.html" class="btn btn-gold">See All Our Work</a>
+      <a href="gallery.html" class="btn btn-gold">See All Our Work</a>
     </div>
   </div>
 </section>
@@ -242,19 +255,19 @@
         <div class="row g-3 mt-1 mb-3">
           <div class="col-6">
             <div class="d-flex gap-3 align-items-start">
-              <i class="bi bi-check-circle-fill text-warning fs-4 mt-1 flex-shrink-0"></i>
+              <i class="bi bi-check-circle-fill fs-4 mt-1 flex-shrink-0"></i>
               <div><strong>A Fraction of the Cost</strong><br><span class="text-muted small">vs. full replacement</span></div>
             </div>
           </div>
           <div class="col-6">
             <div class="d-flex gap-3 align-items-start">
-              <i class="bi bi-check-circle-fill text-warning fs-4 mt-1 flex-shrink-0"></i>
+              <i class="bi bi-check-circle-fill fs-4 mt-1 flex-shrink-0"></i>
               <div><strong>No Demo, No Mess</strong><br><span class="text-muted small">No tile removal, no construction</span></div>
             </div>
           </div>
           <div class="col-6">
             <div class="d-flex gap-3 align-items-start">
-              <i class="bi bi-check-circle-fill text-warning fs-4 mt-1 flex-shrink-0"></i>
+              <i class="bi bi-check-circle-fill fs-4 mt-1 flex-shrink-0"></i>
               <div><strong>Local &amp; Family-Run</strong><br><span class="text-muted small">Serving Montana since 2017</span></div>
             </div>
           </div>
@@ -355,6 +368,13 @@
     <div class="footer-bottom">&copy; 2026 Applied Coatings — Kalispell, MT &nbsp;|&nbsp; Site by Howe Ranch Tech</div>
   </div>
 </footer>
+
+
+<!-- MOBILE CALL BAR -->
+<div class="mobile-cta d-lg-none">
+  <a href="tel:4064073814" class="btn btn-gold"><i class="bi bi-telephone-fill me-1"></i> Call</a>
+  <a href="contact.html" class="btn btn-light"><i class="bi bi-clipboard-check me-1"></i> Free Estimate</a>
+</div>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
